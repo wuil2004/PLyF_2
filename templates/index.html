@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <title>Comparador de Modelos de Detección de Phishing</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f4f4f4; color: #333; padding: 20px; }
+        .container { max-width: 700px; margin: auto; background: white; padding: 20px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        label { display: block; margin-top: 15px; font-size: 1.1em; }
+        input[type="range"] { width: 100%; }
+        button { background-color: #007bff; color: white; padding: 10px 15px; border: none; border-radius: 4px; cursor: pointer; margin-top: 20px; font-size: 1em; }
+        button:hover { background-color: #0056b3; }
+        h1 { text-align: center; }
+        output { font-weight: bold; color: #007bff; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Comparador Interactivo de Modelos de Detección de Phishing</h1>
+        <p>Usa el slider para seleccionar la cantidad de datos para entrenar los modelos y observa cómo cambian su rendimiento y sus límites de decisión.</p>
+        <form action="/compare" method="post">
+            <label for="train_size">Porcentaje del dataset para entrenamiento:</label>
+            <input type="range" id="train_size" name="train_size" min="10" max="80" value="60" oninput="this.nextElementSibling.value = this.value + '%'">
+            <output>60%</output>
+
+            <button type="submit">Entrenar y Comparar Modelos</button>
+        </form>
+    </div>
+</body>
+</html>
