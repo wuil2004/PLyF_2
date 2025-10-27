@@ -11,3 +11,5 @@
 /api-android/ml_api/ml_api/.env
 /api-android/ml_api/ml_api/celerybeat-schedule
 /api-android/ml_api/ml_api/media/
+/mongo_dump_final_safe/
+/api-android/ml_api/mi_api.zip
