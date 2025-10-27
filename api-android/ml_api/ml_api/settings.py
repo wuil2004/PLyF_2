@@ -11,7 +11,7 @@ https://docs.djangoproject.com/en/5.2/ref/settings/
 """
 
 from pathlib import Path
-
+import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -21,7 +21,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/5.2/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = 'django-insecure--r$&8oqc+we5%0yi3k-xsiw-&lw+87)by1w+0465=v-x9c#$k)'
+SECRET_KEY = os.environ.get('SECRET_KEY', 'django-insecure--r$&8oqc+we5%0yi3k-xsiw-&lw+87)by1w+0465=v-x9c#$k)')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
@@ -127,6 +127,6 @@ STATIC_ROOT = BASE_DIR / 'staticfiles'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-from pymongo import MongoClient
 
-MONGO_URI = "mongodb://localhost:27017"
+
+MONGO_URI = os.environ.get('MONGO_URI')
