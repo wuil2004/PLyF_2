@@ -1,6 +1,9 @@
 /datasets
 /PLyF
 /proyect-api
+/api-android/ml_api/decision_forest/__pycache__/
+/api-android/ml_api/decision_forest/models/__pycache__/
+/api-android/ml_api/decision_forest/migrations/__pycache__/
 /api-android/ml_api/ml_api/__pycache__/
 /api-android/ml_api/ml_api/migrations/__pycache__/
 /api-android/ml_api/ml_api/staticfiles/
