@@ -1,3 +1,10 @@
 /datasets
 /PLyF
 /proyect-api
+/api-android/ml_api/ml_api/__pycache__/
+/api-android/ml_api/ml_api/migrations/__pycache__/
+/api-android/ml_api/ml_api/staticfiles/
+/api-android/ml_api/ml_api/db.sqlite3
+/api-android/ml_api/ml_api/.env
+/api-android/ml_api/ml_api/celerybeat-schedule
+/api-android/ml_api/ml_api/media/
